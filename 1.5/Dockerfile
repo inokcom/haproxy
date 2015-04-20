@@ -1,4 +1,5 @@
-FROM phusion/baseimage:0.9.16
+# FROM phusion/baseimage:0.9.16
+FROM quay.io/inok/baseimage
 
 RUN apt-get update && apt-get install -y libssl1.0.0 libpcre3 --no-install-recommends && rm -rf /var/lib/apt/lists/*
 
